@@ -1,0 +1,4 @@
+[build]
+  base = "katana-ai-nexus-portfolio"
+  command = "npm run build"
+  publish = "dist" 
