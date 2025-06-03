@@ -1,4 +1,13 @@
 [build]
   base = "katana-ai-nexus-portfolio"
-  command = "npm run build"
-  publish = "dist" 
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "katana-ai-nexus-portfolio/dist"
+
+[build.environment]
+  NODE_VERSION = "18.18.0"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
